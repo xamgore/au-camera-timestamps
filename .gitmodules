@@ -1,0 +1,3 @@
+[submodule "video_timestamp"]
+	path = video_timestamp
+	url = https://github.com/danlapko/video_timestamp.git
