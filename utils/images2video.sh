@@ -1,0 +1,1 @@
+ffmpeg -loop 1 -t 0.3 -i out-0.png -loop 1 -t 0.3 -i out-1.png -filter_complex "[0:v]scale=trunc(iw/2)*2:trunc(ih/2)*2[v0]; [1:v]scale=trunc(iw/2)*2:trunc(ih/2)*2[v1]; [v0][v1]concat=n=2:v=1:a=0,format=yuv420p[v]" -map "[v]" out.mp4
